@@ -1,0 +1,6 @@
+http://example.com/categories/index.html
+http://example.com/tags/index-1.html
+http://example.com/tags/index.html
+http://example.com/2023/02/17/test-my-site/
+http://example.com/2023/02/17/hello-world/
+http://example.com/
