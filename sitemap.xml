@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2023/02/19/%E5%BA%9E%E6%AC%A2%E8%85%BE%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://panghuanteng.github.io/2023/02/19/%E5%BA%9E%E6%AC%A2%E8%85%BE%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</loc>
     
     <lastmod>2023-02-19</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2023/02/17/hello-world/</loc>
+    <loc>https://panghuanteng.github.io/2023/02/17/hello-world/</loc>
     
     <lastmod>2023-02-19</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://panghuanteng.github.io/categories/index.html</loc>
     
     <lastmod>2023-02-19</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://panghuanteng.github.io/tags/index.html</loc>
     
     <lastmod>2023-02-19</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2023/02/17/test-my-site/</loc>
+    <loc>https://panghuanteng.github.io/2023/02/17/test-my-site/</loc>
     
     <lastmod>2023-02-17</lastmod>
     
@@ -48,7 +48,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://panghuanteng.github.io/</loc>
     <lastmod>2023-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -56,14 +56,14 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</loc>
+    <loc>https://panghuanteng.github.io/tags/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2023-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://panghuanteng.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -72,7 +72,7 @@
 
   
   <url>
-    <loc>http://example.com/categories/Java%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://panghuanteng.github.io/categories/Java%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2023-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
