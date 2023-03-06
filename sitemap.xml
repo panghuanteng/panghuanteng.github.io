@@ -4,7 +4,7 @@
   <url>
     <loc>https://panghuanteng.github.io/2023/02/17/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95/</loc>
     
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-06</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,29 +49,36 @@
 
   <url>
     <loc>https://panghuanteng.github.io/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://panghuanteng.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2023-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://panghuanteng.github.io/tags/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://panghuanteng.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://panghuanteng.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2023-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://panghuanteng.github.io/tags/%E8%B4%B9%E6%9B%BC/</loc>
+    <lastmod>2023-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -80,7 +87,14 @@
   
   <url>
     <loc>https://panghuanteng.github.io/categories/Java%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://panghuanteng.github.io/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2023-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
