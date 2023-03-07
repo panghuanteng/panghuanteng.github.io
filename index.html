@@ -64,7 +64,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"><lin
 
         <h4 id="方法2：">
           <a href="#方法2：" class="heading-link"><i class="fas fa-link"></i></a><a href="#方法2：" class="headerlink" title="方法2："></a><strong>方法2：</strong></h4>
-      <p><img src="https://docimg7.docs.qq.com/image/AgAABTYvFBT7gSH4RbpH8qCwbO1NoQPP.png?w=865&h=324" style alt="img"></p>
+      <p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBT7gSH4RbpH8qCwbO1NoQPP.png?w=865&h=324" style alt="img"></p>
 <p>setTemplateLoaderPath 参数是指定我们定义好的模板存放目录</p>
 <p>代码：</p>
 <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">package com.hxkj.server.api.haiyangserver.config;</span><br><span class="line">import org.springframework.context.annotation.Bean;</span><br><span class="line">import org.springframework.context.annotation.Configuration;</span><br><span class="line">import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;</span><br><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.Map;</span><br><span class="line">/**</span><br><span class="line"> * @Author pht</span><br><span class="line"> * @Description word模板配置</span><br><span class="line"> * @Date 2021/6/24</span><br><span class="line"> **/</span><br><span class="line">@Configuration</span><br><span class="line">public class ApplicationConfig &#123;</span><br><span class="line">    @Bean(name = &quot;freeMarkerConfigurer&quot;)</span><br><span class="line">    public FreeMarkerConfigurer freeMarkerConfigurer() &#123;</span><br><span class="line">        FreeMarkerConfigurer configurer = new FreeMarkerConfigurer();</span><br><span class="line">        configurer.setDefaultEncoding(&quot;UTF-8&quot;);</span><br><span class="line">        configurer.setTemplateLoaderPath(&quot;classpath:/staticftl&quot;);</span><br><span class="line">        Map&lt;String, Object&gt; variables = new HashMap&lt;&gt;();</span><br><span class="line">        variables.put(&quot;xml_escape&quot;, &quot;fmXmlEscape&quot;);</span><br><span class="line">        configurer.setFreemarkerVariables(variables);</span><br><span class="line">        return configurer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
@@ -81,7 +81,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"><lin
       
         <h4 id="4-1-拿到原始模板文件">
           <a href="#4-1-拿到原始模板文件" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-1-拿到原始模板文件" class="headerlink" title="4.1 拿到原始模板文件"></a><strong>4.1 拿到原始模板文件</strong></h4>
-      <p><img src="https://docimg5.docs.qq.com/image/AgAABTYvFBQkFAyOFdZNyqkDG1tuOgMb.png?w=865&h=740" style alt="img"></p>
+      <p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBQkFAyOFdZNyqkDG1tuOgMb.png?w=865&h=740" style alt="img"></p>
 <p>上图是一个word文件，框选的区域内容是需要程序动态填充的。然后需要整理模板格式，根据模板需要定义替换符关键字。</p>
 
         <h4 id="4-2-建立替换占位符号">
@@ -96,12 +96,12 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"><lin
 <p>把对应需要动态替换值的位置填充上关键字，并把黄色的标注去掉</p>
 <p><strong>如果有图片</strong>，需要把图片插入并调整好位置。图片的替换关键字在转换成xml后做。</p>
 <p>替换完成word文件里的占位符后，结果如下</p>
-<p><img src="https://docimg8.docs.qq.com/image/AgAABTYvFBSfwRzN0AtDI7P4FVIlnIWO.png?w=865&h=717" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBSfwRzN0AtDI7P4FVIlnIWO.png?w=865&h=717" style alt="img"></p>
 <p>模板文档中${}是占位符，即生成Word文档时占位符会被真实的数据替换。例如${name}在生成文档时会被name这个属性的值替换 ，${userObj.name}在生成文档时会被userObj这个对象的name属性的值替换。</p>
 
         <h4 id="4-3-将-doc文档另存为-xml文件">
           <a href="#4-3-将-doc文档另存为-xml文件" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-3-将-doc文档另存为-xml文件" class="headerlink" title="4.3 将.doc文档另存为.xml文件"></a><strong>4.3 将.doc文档另存为.xml文件</strong></h4>
-      <p><img src="https://docimg7.docs.qq.com/image/AgAABTYvFBSZJ-9cPiRNEY_NWY_nZSQp.png?w=915&h=798" style alt="img"></p>
+      <p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBSZJ-9cPiRNEY_NWY_nZSQp.png?w=915&h=798" style alt="img"></p>
 <p>把word文档转成xml文件</p>
 <p>另存为，选择xml格式</p>
 <p>使用notepad++打开xml模板</p>
@@ -111,25 +111,25 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"><lin
 <p>你会发现里面都是一些看不懂的乱码</p>
 <p>此时不要慌</p>
 <p>打开效果：</p>
-<p><img src="https://docimg10.docs.qq.com/image/AgAABTYvFBQ16sIv9CtMloLviRBpacUd.png?w=1916&h=884" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBQ16sIv9CtMloLviRBpacUd.png?w=1916&h=884" style alt="img"></p>
 <p>安装一个插件</p>
-<p><img src="https://docimg10.docs.qq.com/image/AgAABTYvFBS9tfeFdOpJ8qTY9lKX6r-0.png?w=1229&h=886" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBS9tfeFdOpJ8qTY9lKX6r-0.png?w=1229&h=886" style alt="img"></p>
 <p>使用这个插件对xml文件格式整理</p>
-<p><img src="https://docimg1.docs.qq.com/image/AgAABTYvFBRsLqwGRFFBOZd71qEy4kV8.png?w=903&h=822" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBRsLqwGRFFBOZd71qEy4kV8.png?w=903&h=822" style alt="img"></p>
 <p>整理完成以后变得清晰了许多</p>
-<p><img src="https://docimg2.docs.qq.com/image/AgAABTYvFBTIPoU52O5Bl5h-yz1ahcu-.png?w=1878&h=866" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBTIPoU52O5Bl5h-yz1ahcu-.png?w=1878&h=866" style alt="img"></p>
 
         <h4 id="4-4-需要修订占位符">
           <a href="#4-4-需要修订占位符" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-4-需要修订占位符" class="headerlink" title="4.4 需要修订占位符"></a><strong>4.4 需要修订占位符</strong></h4>
       <p>需要修订一下模板，用搜索Ctrl + f查询$字符，保证我们定义的占位符是完全挨着的${producer}，如果看到替换关键字没有在一起，需要把中间的内容删除</p>
-<p><img src="https://docimg3.docs.qq.com/image/AgAABTYvFBQpopEt-C1OHppZ8DD8qUbb.png?w=865&h=399" style alt="img"></p>
-<p><img src="https://docimg8.docs.qq.com/image/AgAABTYvFBQ_eP9d6c9BJ6nTzbHfb9mC.png?w=865&h=399" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBQpopEt-C1OHppZ8DD8qUbb.png?w=865&h=399" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBQ_eP9d6c9BJ6nTzbHfb9mC.png?w=865&h=399" style alt="img"></p>
 <h4 id><a href="#" class="headerlink" title></a></h4>
         <h4 id="4-5-拿到-xml模板后处理图片占位">
           <a href="#4-5-拿到-xml模板后处理图片占位" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-5-拿到-xml模板后处理图片占位" class="headerlink" title="4.5 拿到.xml模板后处理图片占位"></a><strong>4.5 拿到.xml模板后处理图片占位</strong></h4>
       <p>配置图片的替换关键字，搜索image</p>
 <p>把binaryData节点里面的字符串删除，改为${image1}</p>
-<p><img src="https://docimg6.docs.qq.com/image/AgAABTYvFBTMzSB_tmlOOLDVX3R1NS9d.png?w=865&h=399" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBTMzSB_tmlOOLDVX3R1NS9d.png?w=865&h=399" style alt="img"></p>
 
         <h4 id="4-6-表格数据渲染配置">
           <a href="#4-6-表格数据渲染配置" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-6-表格数据渲染配置" class="headerlink" title="4.6 表格数据渲染配置"></a><strong>4.6 表格数据渲染配置</strong></h4>
@@ -144,10 +144,10 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"><lin
 <p>注意表格里的替换符要用#list里面定义的list_table，例如${list_table.val1}</p>
 <p>${list_table.val2}</p>
 <p>这里相当于从一个map对象里取出两个值。</p>
-<p><img src="https://docimg8.docs.qq.com/image/AgAABTYvFBQg6gRorT9AJbQTETcqEtbD.png?w=1060&h=805" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBQg6gRorT9AJbQTETcqEtbD.png?w=1060&h=805" style alt="img"></p>
 <p>所有关键字调整好后，保存，修改文件后缀为.ftl</p>
 <p>然后放入项目对应目录下resources。模板编辑完成。</p>
-<p><img src="https://docimg8.docs.qq.com/image/AgAABTYvFBSIXFLfNApHX4y8jCXQAcdW.png?w=1218&h=910" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBSIXFLfNApHX4y8jCXQAcdW.png?w=1218&h=910" style alt="img"></p>
 
         <h3 id="5、开发生成文档接口">
           <a href="#5、开发生成文档接口" class="heading-link"><i class="fas fa-link"></i></a><a href="#5、开发生成文档接口" class="headerlink" title="5、开发生成文档接口"></a><strong>5、开发生成文档接口</strong></h3>
@@ -164,14 +164,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.2"><lin
 
 <p>填充模板的数据可以是前端传来的数据，也可以是从数据库获取的数据</p>
 <p>打包map，如果有list就put一个map进去，map的key就是前面定义模板时设置的占位符。</p>
-<p><img src="https://docimg6.docs.qq.com/image/AgAABTYvFBTusUWVHKNHWJ0FpMPCyUtJ.png?w=865&h=319" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBTusUWVHKNHWJ0FpMPCyUtJ.png?w=865&h=319" style alt="img"></p>
 <p>图片，传递绝对地址，就可以获取图片可视化的二级支流，BASE64Encoder</p>
-<p><img src="https://docimg1.docs.qq.com/image/AgAABTYvFBSBuo3A8e1K_6tsBq8f8991.png?w=865&h=609" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBSBuo3A8e1K_6tsBq8f8991.png?w=865&h=609" style alt="img"></p>
 <p>开始生成word，需要准备的参数：</p>
 <p>  dataMap 填充模板的数据</p>
 <p>  ftlName 模板名称</p>
 <p>  docPath 输出地址+文件名</p>
-<p><img src="https://docimg10.docs.qq.com/image/AgAABTYvFBQwDcOUUWFOc4oE6AfQWBXJ.png?w=865&h=326" style alt="img"></p>
+<p><img src="/2023/03/07/Java%E4%BD%BF%E7%94%A8freemarker%E5%88%B6%E4%BD%9Cword%E6%96%87%E6%A1%A3%E5%AE%8C%E6%95%B4%E7%AC%94%E8%AE%B0/AgAABTYvFBQwDcOUUWFOc4oE6AfQWBXJ.png?w=865&h=326" style alt="img"></p>
 <p>然后就ok了</p>
 <p>下面是完整代码：</p>
 <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">    public Result getGeneratedLetters(WeatherInfoLetters weatherInfoLetters) &#123;</span><br><span class="line">        // word文档输出的目录，上传的图片也在这个目录里</span><br><span class="line">        String wordoutPath = &quot;D:/xxx/&quot;;</span><br><span class="line">        // 测试输出地址</span><br><span class="line">        // wordoutPath = &quot;D:\\ideaproject\\data\\word\\&quot;;</span><br><span class="line">        // 配置使用的模板名称</span><br><span class="line">        String templetName = &quot;气象信息快报.ftl&quot;;</span><br><span class="line">        /**</span><br><span class="line">         * 打包数据到map</span><br><span class="line">         */</span><br><span class="line">        Map&lt;String, Object&gt; templetData = dataPackage(“传入需要打包的数据”);</span><br><span class="line">        // 生成word文档</span><br><span class="line">        // 输出的文档名称</span><br><span class="line">        String docName = wordoutPath + &quot;气象信息快报.doc&quot;;</span><br><span class="line">        // 执行生成</span><br><span class="line">        Boolean process = process(templetData, templetName, docName);</span><br><span class="line">        if (!process) &#123;</span><br><span class="line">            return Result.queryIsnull(&quot;生成报表文档失败！&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        /**</span><br><span class="line">         * 下面你可以根据业务做任何事，比如：需要在线预览，可以转出一份pdf提供在线预览</span><br><span class="line">         * 把word文档转出pdf文件，pdf文件和word使用同一个输出地址wordoutPath</span><br><span class="line">         */</span><br><span class="line">        String outpdfname = docName.substring(0, docName.lastIndexOf(&quot;.&quot;));</span><br><span class="line">        Result&lt;String&gt; pdf = new WordToPDFUtil().wordTransformPdf(docName, outpdfname, false);</span><br><span class="line">        String pdfname = outpdfname.substring(1 + outpdfname.lastIndexOf(&quot;/&quot;));</span><br><span class="line"></span><br><span class="line">        return Result.success(docName);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></div></figure>
