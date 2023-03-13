@@ -6,7 +6,7 @@
   <link href="https://panghuanteng.github.io/atom.xml" rel="self"/>
   
   <link href="https://panghuanteng.github.io/"/>
-  <updated>2023-03-10T09:04:43.044Z</updated>
+  <updated>2023-03-13T07:09:09.978Z</updated>
   <id>https://panghuanteng.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二、气象数据来源</title>
+    <link href="https://panghuanteng.github.io/2023/03/13/%E4%BA%8C%E3%80%81%E6%B0%94%E8%B1%A1%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90/"/>
+    <id>https://panghuanteng.github.io/2023/03/13/%E4%BA%8C%E3%80%81%E6%B0%94%E8%B1%A1%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90/</id>
+    <published>2023-03-13T06:59:03.000Z</published>
+    <updated>2023-03-13T07:09:09.978Z</updated>
+    
+    <content type="html"><![CDATA[<p>基本概念<br>目前公司主要做气象数据的展示，气象数据，是指表示天气信息的数据，包含温度、空气湿度、降水量等天气信息。<br>一般每种气象数据，都是多种天气要素的合集。<br>分类<br>目前公司常用的气象数据有以下几类：</p>        <h3 id="（1）站点类（地上的）">          <a href="#（1）站点类（地上的）" class="heading-link"><i class="fas fa-link"></i></a><a href="#（1）站点类（地上的）" class="headerlink" title="（1）站点类（地上的）"></a>（1）站点类（地上的）</h3>      <p><img src="/2023/03/13/%E4%BA%8C%E3%80%81%E6%B0%94%E8%B1%A1%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90/qixiangzidongzhanpng.jpg" alt="img"></p><p>自动站数据闪电定位环境站数据</p>        <h3 id="（2）雷达数据（白球）">          <a href="#（2）雷达数据（白球）" class="heading-link"><i class="fas fa-link"></i></a><a href="#（2）雷达数据（白球）" class="headerlink" title="（2）雷达数据（白球）"></a>（2）雷达数据（白球）</h3>      <p><img src="/2023/03/13/%E4%BA%8C%E3%80%81%E6%B0%94%E8%B1%A1%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90/qixiangleidapng.jpg" alt="img"></p>        <h3 id="（3）卫星数据（地球外的）">          <a href="#（3）卫星数据（地球外的）" class="heading-link"><i class="fas fa-link"></i></a><a href="#（3）卫星数据（地球外的）" class="headerlink" title="（3）卫星数据（地球外的）"></a>（3）卫星数据（地球外的）</h3>      <p><img src="/2023/03/13/%E4%BA%8C%E3%80%81%E6%B0%94%E8%B1%A1%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90/qixiangweixingpng.jpg" alt="img"></p><p> 风云4卫星葵花8卫星</p>        <h3 id="（4）数值模式">          <a href="#（4）数值模式" class="heading-link"><i class="fas fa-link"></i></a><a href="#（4）数值模式" class="headerlink" title="（4）数值模式"></a>（4）数值模式</h3>      <p>所谓数值天气预报模式，就是使用大型计算集群求解离散化的大气运动原始方程组，为方程组输入基于观测的预报初始场和边界场，并添加各种微尺度物理过程参数化方案，再利用观测数据进行同化和订正，最终得到随时间演化的预报场数据。</p><p>ec数据</p>        <h3 id="（5-同化数据">          <a href="#（5-同化数据" class="heading-link"><i class="fas fa-link"></i></a><a href="#（5-同化数据" class="headerlink" title="（5)  同化数据"></a>（5)  同化数据</h3>      <p>数据同化就是利用一系列约束条件将观测信息加到模式中，更改模式的初始状态和观测更为接近 (即尽可能接近真实大气状态的真实状态)，来达到更好的预报效果。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;基本概念&lt;br&gt;目前公司主要做气象数据的展示，气象数据，是指表示天气信息的数据，包含温度、空气湿度、降水量等天气信息。&lt;br&gt;一般每种气象数据，都是多种天气要素的合集。&lt;br&gt;分类&lt;br&gt;目前公司常用的气象数据有以下几类：&lt;/p&gt;
+
+        &lt;h3 id=&quot;（1）站</summary>
+      
+    
+    
+    
+    <category term="气象基础知识" scheme="https://panghuanteng.github.io/categories/%E6%B0%94%E8%B1%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="气象数据源" scheme="https://panghuanteng.github.io/tags/%E6%B0%94%E8%B1%A1%E6%95%B0%E6%8D%AE%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一、气象基础知识（经纬度、时间、高度层）</title>
+    <link href="https://panghuanteng.github.io/2023/03/13/%E4%B8%80%E3%80%81%E6%B0%94%E8%B1%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%EF%BC%88%E7%BB%8F%E7%BA%AC%E5%BA%A6%E3%80%81%E6%97%B6%E9%97%B4%E3%80%81%E9%AB%98%E5%BA%A6%E5%B1%82%EF%BC%89/"/>
+    <id>https://panghuanteng.github.io/2023/03/13/%E4%B8%80%E3%80%81%E6%B0%94%E8%B1%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%EF%BC%88%E7%BB%8F%E7%BA%AC%E5%BA%A6%E3%80%81%E6%97%B6%E9%97%B4%E3%80%81%E9%AB%98%E5%BA%A6%E5%B1%82%EF%BC%89/</id>
+    <published>2023-03-13T06:50:13.000Z</published>
+    <updated>2023-03-13T06:53:19.012Z</updated>
+    
+    <content type="html"><![CDATA[        <h3 id="（1）经纬度">          <a href="#（1）经纬度" class="heading-link"><i class="fas fa-link"></i></a><a href="#（1）经纬度" class="headerlink" title="（1）经纬度"></a>（1）经纬度</h3>      <p>用作标记地理位置信息，比如北京的经纬度（116°20′，39°56′），通常我们用到的经纬都是投影后的经纬度。</p><p>气象数据常用的经纬度信息包括单点型和范围型<br>单点型，表示一个点位的经纬度；范围型，表示一个矩形范围的经纬度；</p>        <h3 id="（2）起报时间、预报时间、观测时间、预报数据、观测数据">          <a href="#（2）起报时间、预报时间、观测时间、预报数据、观测数据" class="heading-link"><i class="fas fa-link"></i></a><a href="#（2）起报时间、预报时间、观测时间、预报数据、观测数据" class="headerlink" title="（2）起报时间、预报时间、观测时间、预报数据、观测数据"></a>（2）起报时间、预报时间、观测时间、预报数据、观测数据</h3>      <p>观测数据：已经发生时间的天气记录，比如现在09时，由于数据传输、延迟等，可以拿到最新的观测数据是08时，当然也可以拿到08时之前的，每个时次的观测数据只记录当前发生的；<br>预报数据：在固定时间点预报未来一段时间天气状况，这个固定时间称为起报时间，通常是每日08时和20时，一个起报时间产生多个预报数据。比如现在1日22时，拿到最新起报时间就是20时的，假设预报时效3天、每小时一个，那么可以拿到1日20时–3月20时的72个预报数据；</p><blockquote><p>注意：调用观测时间接口，后端返回的是最新观测时间；<br>只有预报数据才会有起报时间和预报时间，调用预报时间接口，后端一般返回的是最新的起报时间；<br>不同数据的起报时间和预报间隔是不一样的，比如EC数值模式8时、20时出，每小时一个，预报三天就是72个数据，而雷达6分钟就更新起报时间，每6分钟一个，预报2个小时大约20个数据；</p></blockquote>        <h3 id="（3）世界时、北京时">          <a href="#（3）世界时、北京时" class="heading-link"><i class="fas fa-link"></i></a><a href="#（3）世界时、北京时" class="headerlink" title="（3）世界时、北京时"></a>（3）世界时、北京时</h3>      <p>世界时：UTC 、格林尼治时间、世界标准时间<br>北京时：BTC、东八区时间<br>BTC = UTC + 8<br>一般来说，原始气象数据时间都是UTC（个别例外），后端处理返回的也是UTC，而前端网页展示需要用BTC<br>例如：后端返回202102120000，前端需展示为 2021-02-12  08:00 、2021/02/12 08:00</p>        <h3 id="（4）高度层">          <a href="#（4）高度层" class="heading-link"><i class="fas fa-link"></i></a><a href="#（4）高度层" class="headerlink" title="（4）高度层"></a>（4）高度层</h3>      <p>一般气象数据，除了在经纬度范围上的一个范围性数据，还可能包含高度上的一个信息。间隔一定高度算做一层，经纬度范围数据是二维数据，多个高度层的经纬度二维数据叠加，就可以组成三维数据。<br>高度层分割一般包括两种：<br>气压层，按照一定气压间隔，设置一个一个的高度层，比如数值模式数据距离，按照一定距离间隔，设置一个一个高度层，比如雷达数据</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">
+        &lt;h3 id=&quot;（1）经纬度&quot;&gt;
+          &lt;a href=&quot;#（1）经纬度&quot; class=&quot;heading-link&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#（1）经纬度&quot; class=&quot;headerlin</summary>
+      
+    
+    
+    
+    <category term="气象基础知识" scheme="https://panghuanteng.github.io/categories/%E6%B0%94%E8%B1%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="经纬度" scheme="https://panghuanteng.github.io/tags/%E7%BB%8F%E7%BA%AC%E5%BA%A6/"/>
+    
+    <category term="高度层" scheme="https://panghuanteng.github.io/tags/%E9%AB%98%E5%BA%A6%E5%B1%82/"/>
+    
+  </entry>
   
   <entry>
     <title>Java基于Spire实现的word文档制作</title>
